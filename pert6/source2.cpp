@@ -1,22 +1,12 @@
 #include <iostream>
 using namespace std;
-void Fibonaci (int N);
-main (){
- int N;
- long hasil;
- cout<<"Masukan batas akhir dari bilangan fibonaci : ";cin>>N;
- Fibonaci(N);
- cout<<endl;
+void cetakumur(int umur){
+ cout<<"Halo, Umur kamu adalah "<<umur<<" tahun";
 }
-void Fibonaci (int N)
-{
- long fib0=0, fib1=1, fib;
- cout<<"Nilai Fibonaci "<<fib0<<" ";
- while (fib0<= N/2)
- {
- fib=fib0+fib1;
- fib0=fib1;
- fib1=fib;
- cout<<fib1<<" ";
- }
+int main(){
+	
+ int angka=20;
+ cetakumur(angka);
+ getchar();
+ return 0;
 }
